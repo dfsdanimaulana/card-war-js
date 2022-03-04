@@ -78,11 +78,11 @@ function flipCards() {
   } else if(isRoundWinner(computerCard, playerCard)){
     text.innerText = 'Lose'
     computerDeck.push(playerCard)
-    computerCard.push(computerCard)
+    computerDeck.push(computerCard)
   } else {
     text.innerText = 'Draw'
     playerDeck.push(playerCard)
-    computerCard.push(computerCard)
+    computerDeck.push(computerCard)
   }
   
   if(isGameOver(playerDeck)){
